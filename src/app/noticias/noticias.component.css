@@ -1,0 +1,17 @@
+
+.micard{
+    max-width: 400px;
+
+}
+mat-card-title{
+   
+    font-size: 2vw;
+}
+mat-card-content{
+    
+    font-size: 1vw;
+}
+.mi-mat-card{
+    height: 300px;
+    background-color: khaki;
+}

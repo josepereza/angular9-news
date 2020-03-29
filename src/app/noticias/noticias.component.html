@@ -1,0 +1,17 @@
+<p>noticias works!</p>
+
+
+
+<mat-grid-list cols="3" rowHeight="300px" gutterSize="10px">
+    <mat-grid-tile *ngFor="let noticia of articles">
+        <mat-card class="mi-mat-card">
+
+            <div *ngIf=noticia.urlToImage>
+                <mat-card-title>{{noticia.title}}</mat-card-title>
+                <mat-card-content>{{noticia.description}}</mat-card-content>
+                <img mat-card-image src="{{noticia.urlToImage}}" style="object-fit: cover; width: 100%; height: 100%;">
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>
